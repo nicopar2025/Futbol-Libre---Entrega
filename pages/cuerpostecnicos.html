@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Futbol Total</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+             <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/images.png" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="img-navbar" src="../img/imgpg6-1.png" alt="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">                   
+                        <li>
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="./jugadores.html">Jugadores</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="#">Cuerpos Tecnicos</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="./busqueda.html" >Busquedas Actuales</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="./contacto.html" >Contacto</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            </nav>       
+    </header>
+         
+           
+
+    <main>
+        <section class="container-fluid">
+            <div class="row">
+                <article class="col-md-6">
+                    <h1>Tu <strong>Próximo</strong> Cuerpo Técnico</h1>
+                        <p>
+                            Descubre Directores Técnicos y sus Equipos de Trabajo en busca de nuevos desafíos. Esta sección te ofrece la oportunidad de conectar con profesionales calificados para potenciar el rendimiento de tu club.
+                            Explora sus perfiles y descubre el liderazgo y la experiencia que tu club necesita.
+                        </p>
+
+                    <div class="mb-3">
+                        <label for="disabledSelect" class="form-label">Experiencia</label>
+                        <select id="posicionSelect" name="posicion" class="form-select">
+                            <option value="">Si</option>
+                            <option value="arquero">No</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="disabledSelect" class="form-label">Nacionalidad</label>
+                        <select id="posicionSelect" name="posicion" class="form-select">
+                            <option value="">Argentina</option>
+                            <option value="arquero">Latinoamericano</option>
+                            <option value="defensor">Norteamericano</option>
+                            <option value="mediocampista">Europeo</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Edad</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Sueldo Máximo</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+
+                </article>
+
+                <div class="col-md-6">
+                    <img src="../img/imgpg3.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="table-hover">
+            <div>
+                <table class="table-info">
+                    <thead>
+                        <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Nacionalidad</th>
+                        <th scope="col">Último Club</th>
+                        <th scope="col">Ver Perfil</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Mark</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>  
+                        <td class="text-center"><a href="" target="_blank" class="btn btn-sm btn-outline-primary">Ver Perfil</a></td>
+                        </tr>
+                        <tr>
+                        <td>Mark</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>  
+                        <td class="text-center"><a href="" target="_blank" class="btn btn-sm btn-outline-primary">Ver Perfil</a></td>
+                        </tr>
+                        <tr>
+                        <td>Mark</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>  
+                        <td class="text-center"><a href="" target="_blank" class="btn btn-sm btn-outline-primary">Ver Perfil</a></td>
+                        </tr>
+                    </tbody>
+                    </table>
+            </div>
+        </section>
+
+    </main>
+
+        <footer>
+            <p>
+                FUTBOL TOTAL © [2025] | Todos los derechos reservados | Política de Privacidad | Términos y Condiciones
+            </p>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
