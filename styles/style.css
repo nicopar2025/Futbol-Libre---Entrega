@@ -59,6 +59,20 @@ h2 {
     margin-bottom: 18px;
 }
 
+
+
+.section {
+    padding-top: 40px; 
+    padding-bottom: 40px; /
+}
+.p {
+    font-size: 20px;
+    margin-bottom: 18px; 
+}
+.a{
+    font-size: 20px;
+    margin-bottom: 18px; 
+}
 @media (max-width: 576px) {
     section {
     padding-top: 20px; 
@@ -81,20 +95,6 @@ h2 {
     margin-bottom: 18px; 
 }
 }
-
-.section {
-    padding-top: 40px; 
-    padding-bottom: 40px; /
-}
-.p {
-    font-size: 20px;
-    margin-bottom: 18px; 
-}
-.a{
-    font-size: 20px;
-    margin-bottom: 18px; 
-}
-
 .li {
     margin-bottom: 8px;
 }
