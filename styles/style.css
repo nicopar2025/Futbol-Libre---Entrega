@@ -12,12 +12,7 @@ body{
     width: 50px;
     height: 50px;
     transition: transform 0.3s ease-in-out;
-    
-
 }
-
-
-
 .logo:hover {
     transform: scale(1.05); /* Ligeramente más grande al pasar el mouse */
 }
@@ -32,10 +27,29 @@ body{
 
 }
 
+.navbar{
+    background-color: #cac4c4; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #444444; /* Color de texto de los enlaces */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: 500; /* Grosor de la fuente */
+    padding-top: 8px; /* Espacio interno de los enlaces */
+    padding-bottom: 8px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    position: relative; /* Necesario para el efecto de subrayado */
+}
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Color al pasar el mouse (azul de Bootstrap) */
+}
 h1 {
-    font-size: 56px; /* Ejemplo para desktop */
-    line-height: 1.2; /* Títulos suelen tener menor line-height */
-    margin-bottom: 24px; /* Espacio debajo del título */
+    font-size: 56px; 
+    line-height: 1.2; 
+    margin-bottom: 24px; 
     text-align: center;
 }
 
@@ -45,8 +59,11 @@ h2 {
     margin-bottom: 18px;
 }
 
-/* Ajustes para mobile */
 @media (max-width: 576px) {
+    section {
+    padding-top: 20px; 
+    padding-bottom: 20px; /
+    }    
     h1 {
         font-size: 36px;
         text-align: center;
@@ -54,20 +71,32 @@ h2 {
     h2 {
         font-size: 28px;
     }
+
+    p{
+        font-size: 15px;
+    }
+
+    .a{
+    font-size: 15px;
+    margin-bottom: 18px; 
+}
 }
 
-section {
-    padding-top: 40px; /* Espacio arriba de cada sección */
-    padding-bottom: 40px; /* Espacio abajo de cada sección */
+.section {
+    padding-top: 40px; 
+    padding-bottom: 40px; /
 }
-/* También puedes usar las clases de Bootstrap como mt-5, mb-5, py-5 */
-p {
-    margin-bottom: 18px; /* Espacio consistente debajo de los párrafos */
+.p {
+    font-size: 20px;
+    margin-bottom: 18px; 
+}
+.a{
+    font-size: 20px;
+    margin-bottom: 18px; 
 }
 
-/* Para tu lista de 'Cómo funciona' */
 .li {
-    margin-bottom: 8px; /* Espacio entre los puntos de la lista */
+    margin-bottom: 8px;
 }
 .col-12{
     text-align: center;
@@ -101,35 +130,33 @@ p {
 .img-contact{
     max-width: 100%; 
     height: auto;    
-    display: block;  /* Hace que la imagen se comporte como un bloque */
-    margin-left: auto; /* Centra un bloque con ancho definido */
-    margin-right: auto; /* Centra un bloque con ancho definido */
+    display: block;  
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .accordion-flush{
     margin: 10px;
 }
-
-/* --- Formulario de Búsqueda --- */
 .form-label {
     font-size: 16px;
     font-weight: 500;
     color: #555555;
-    margin-bottom: 8px; /* Espacio debajo del label */
+    margin-bottom: 8px;
 }
 
 .form-select,
 .form-control {
     font-size: 16px;
-    padding: 10px 15px; /* Aumenta el padding para que sean más fáciles de usar */
-    border-radius: 8px; /* Bordes más suaves */
+    padding: 10px 15px;
+    border-radius: 8px; 
     border: 1px solid #ced4da;
 }
 
 
 .btn-primary {
     font-size: 18px;
-    padding: 12px 25px; /* Botón más grande */
+    padding: 12px 25px; 
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.2s ease;
     background-color: #007bff;
@@ -137,18 +164,16 @@ p {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    background-color: #0056b3; 
     border-color: #0056b3;
-    transform: translateY(-2px); /* Pequeño levantamiento */
 }
 
 
 
 .table {
     width: 100%;
-    margin-bottom: 0; /* Quita el margen inferior de la tabla de Bootstrap */
-    border-collapse: collapse; /* Asegura que no haya doble borde */
-    overflow-x: auto; /* Asegura el scroll horizontal si es necesario */
+    margin-bottom: 0; 
+    overflow-x: auto; 
 }
 
 .botton-link{
@@ -163,18 +188,14 @@ p {
 
 
 footer {
-    background-color: #333333; /* Fondo oscuro */
-    color: #f8f9fa; /* Texto claro */
-    padding: 30px 0; /* Relleno superior e inferior */
+    background-color: #333333; 
+    color: #f8f9fa;
+    padding: 30px 0;
     text-align: center;
     font-size: 15px;
-    margin-top: 60px; /* Margen superior para separarlo del contenido */
+    margin-top: 60px; 
 }
 
 .filtrar-busqueda{
     text-align: end;
-}
-.b{
-    justify-content: center;
-    align-items: center;
 }
