@@ -170,3 +170,11 @@ footer {
     font-size: 15px;
     margin-top: 60px; /* Margen superior para separarlo del contenido */
 }
+
+.filtrar-busqueda{
+    text-align: end;
+}
+.b{
+    justify-content: center;
+    align-items: center;
+}

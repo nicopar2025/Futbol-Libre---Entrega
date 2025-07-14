@@ -41,12 +41,12 @@
             </nav>
 
 
-        <section class="container-fluid">
+        <section class="container">
             <div class="row">
-                <div class="col-6">
+                <div  class="col-12 col-md-5">
                     <img src="../img/imgpg4.png" alt="">   
                 </div>
-                <article class="col-6">
+                <article class="col-12 col-md-5">
                     <h1>Búsquedas Activas</h1>
                         <p>
                            En esta sección, podrás visualizar las <strong>búsquedas activas que los clubes están
@@ -62,44 +62,53 @@
                 </article>
             </div>
         </section>
-        
-        <section class="container-fluid">
-            <div class="row">
-                <div class="form-check" class="col-3">
-                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                    <label class="form-check-label" for="checkDefault">
-                        Jugador
-                    </label>
+       
+
+            <section class="container text-center">
+            <h2 class="">Filtrar Búsquedas</h2>
+            <div class="row"> 
+                <div class="col-6 col-sm-4 col-md-3 col-lg-auto"> 
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="jugador" id="checkJugador">
+                        <label class="form-check-label" for="checkJugador">
+                            Jugador
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check" class="col-3">
-                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-                    <label class="form-check-label" for="checkChecked">
-                        Cuerpo Técnico
-                    </label>
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-auto"> <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="cuerpo_tecnico" id="checkCT">
+                        <label class="form-check-label" for="checkCT">
+                            Cuerpo Técnico
+                        </label>
+                    </div>
                 </div>
 
-                <div class="col-2">
-                    <label for="disabledSelect" class="form-label">Experiencia</label>
-                    <select id="posicionSelect" name="posicion" class="form-select">
-                        <option value="">Si</option>
-                        <option value="arquero">No</option>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <label for="experienciaSelect" class="form-label">Experiencia</label>
+                    <select id="experienciaSelect" name="experiencia" class="form-select">
+                        <option value="">Cualquiera</option> <option value="con">Con Experiencia</option>
+                        <option value="sin">Sin Experiencia</option>
                     </select>
                 </div>
 
-                <div class="col-2">
-                    <label for="disabledSelect" class="form-label">Experiencia</label>
-                    <select id="posicionSelect" name="posicion" class="form-select">
-                        <option value="">Si</option>
-                        <option value="arquero">No</option>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <label for="nacionalidadSelect" class="form-label">Nacionalidad</label>
+                    <select id="nacionalidadSelect" name="nacionalidad" class="form-select">
+                        <option value="">Cualquiera</option> <option value="argentina">Argentina</option>
+                        <option value="latinoamericano">Latinoamericano</option>
+                        <option value="europeo">Europeo</option>
+                        <option value="otro">Otro</option>
                     </select>
                 </div>
 
-                <div class="col-2">
-                    <label for="disabledSelect" class="form-label">Experiencia</label>
-                    <select id="posicionSelect" name="posicion" class="form-select">
-                        <option value="">Si</option>
-                        <option value="arquero">No</option>
-                    </select>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <label for="sueldoMaxInput" class="form-label">Sueldo Máximo</label>
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text" id="sueldoMaxPrepend">$</span> <input type="number" class="form-control" id="sueldoMaxInput" aria-describedby="sueldoMaxPrepend" placeholder="Ej: 50000">
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-primary px-5 py-3">Aplicar Filtros</button>
                 </div>
 
             </div>
@@ -107,7 +116,7 @@
 
         <section class="table-player">
                 <div>
-                <table class="table-info">
+                <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">Club</th>
@@ -120,27 +129,27 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Mark</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>  
-                            <td>@mdo</td>  
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>  
+                            <td></td>  
                             <td class="text-center"><a href="" target="_blank" class="btn btn-sm btn-outline-primary">Ver Perfil</a></td>
                         </tr>
                         <tr>
-                            <td>Mark</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>  
-                            <td>@mdo</td>  
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>  
+                            <td></td>  
                             <td class="text-center"><a href="" target="_blank" class="btn btn-sm btn-outline-primary">Ver Perfil</a></td>
                         </tr>
                         <tr>
-                            <td>Mark</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>  
-                            <td>@mdo</td>  
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>  
+                            <td></td>  
                             <td class="text-center"><a href="" target="_blank" class="btn btn-sm btn-outline-primary">Ver Perfil</a></td>
                         </tr>
                     </tbody>
@@ -152,36 +161,36 @@
 
         <section class="table-tec">
             <div>
-                <table class="table-info">
+                <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">Club</th>
                             <th scope="col">Pais</th>
-                            <th scope="col">Dutación de Contrato</th>
+                            <th scope="col">Duración de Contrato</th>
                             <th scope="col">Sueldo Ofrecido</th>  
                             <th scope="col">Información</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Mark</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>  
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>  
                             <td class="text-center"><a href="" target="_blank" class="btn btn-sm btn-outline-primary">Ver Perfil</a></td>
                         </tr>
                         <tr>
-                            <td>Mark</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>  
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>  
                             <td class="text-center"><a href="" target="_blank" class="btn btn-sm btn-outline-primary">Ver Perfil</a></td>
                         </tr>
                         <tr>
-                            <td>Mark</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>  
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>  
                             <td class="text-center"><a href="" target="_blank" class="btn btn-sm btn-outline-primary">Ver Perfil</a></td>
                         </tr>
                     </tbody>
@@ -189,62 +198,15 @@
             </div>
 
         </section>
-        <!-- <img src="../img/images.png" alt="">
-        <nav>
-            <ul class="navegador">
-                <li class="nav-li">
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-li">
-                    <a href="./jugadores.html">Jugadores</a>
-                </li>
-                <li class="nav-li">
-                    <a href="./cuerpostecnicos.html">Cuerpos Tecnicos</a>
-                </li>
-                <li class="nav-li">
-                    <a href="#">Busquedas Actuales</a>
-                </li>
-                <li class="nav-li">
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-
-            </ul>
-        </nav>
-    -->
-
-    <!--
-    </header>
-
-    <main>
-        <section>
-            <h1>Búsquedas Activas</h1>
-            <img src="../img/imgpg4.png" alt="">
-            <article>
-                <p>
-                En esta sección, podrás visualizar las <strong>búsquedas activas que los clubes están
-                realizando</strong> a través de FUTBOL TOTAL. Es tu oportunidad para descubrir las necesidades
-                específicas de equipos de todo el mundo y encontrar tu próximo destino.
-                </p>
-
-            </article>
-            <article>
-            <p>
-                Mantente al tanto de las posiciones que buscan, los perfiles que interesan y las oportunidades que
-                se ajustan a tu trayectoria. Explora las demandas actuales de los clubes y da el siguiente paso en
-                tu carrera.
-                </p>
-            </article>
-        </section>
-    </main>
--->
+   
     <footer>
         <p>
             FUTBOL TOTAL © [2025] | Todos los derechos reservados | Política de Privacidad | Términos y Condiciones
         </p>
     </footer>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
 
 </html>
