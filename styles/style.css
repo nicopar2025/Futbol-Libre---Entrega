@@ -1,73 +1,79 @@
-/*
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/*  font-family: "Open Sans", sans-serif;
 
-*
 
-body{
-    font-family: "Open Sans", sans-serif;
-    background-color: gainsboro;
-}
-
-.nav-li{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-h1{
-    font-size: 50px;
-    color: black;
-}
-
-h2{
-    font-size: 30px;
-    color:firebrick;
-}
-
-p{
-    font size: 20
-    color: black;
-}
-
-.enumeracion{
-    font-size: 20px;
-}
-
-footer{
-    font-size: 10px;
-    color: brown;
-}
-    */
 
 body{
     background-color: azure;
+    font-family: "Open Sans", sans-serif;
 }
 .logo{
     width: 50px;
     height: 50px;
+    transition: transform 0.3s ease-in-out;
+    
 
+}
+
+
+
+.logo:hover {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el mouse */
 }
 
 .header{
     margin-bottom: 30px;
 }
+.img-navbar{
+    width:40px ;
+    height:40px ;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 56px; /* Ejemplo para desktop */
+    line-height: 1.2; /* Títulos suelen tener menor line-height */
+    margin-bottom: 24px; /* Espacio debajo del título */
+    text-align: center;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 28px;
+    }
+}
+
+section {
+    padding-top: 40px; /* Espacio arriba de cada sección */
+    padding-bottom: 40px; /* Espacio abajo de cada sección */
+}
+/* También puedes usar las clases de Bootstrap como mt-5, mb-5, py-5 */
+p {
+    margin-bottom: 18px; /* Espacio consistente debajo de los párrafos */
+}
+
+/* Para tu lista de 'Cómo funciona' */
+.li {
+    margin-bottom: 8px; /* Espacio entre los puntos de la lista */
+}
 .col-12{
     text-align: center;
 }
 
-.link{
-    text-decoration: none;
-    color: gray;
-    text-decoration: underline;
-    font-weight: 500;
-    cursor: grab;
-    
-}
+
 
 .table-info th{
     text-align: center;
@@ -85,11 +91,6 @@ body{
 
 
 
-
-
-.section{
-    margin: 20px;
-}
 .table-tec{
     margin: 20px;
 }
@@ -109,9 +110,63 @@ body{
     margin: 10px;
 }
 
-.img-navbar{
-    width:40px ;
-    height:40px ;
-    text-align: center;
+/* --- Formulario de Búsqueda --- */
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 8px; /* Espacio debajo del label */
+}
 
+.form-select,
+.form-control {
+    font-size: 16px;
+    padding: 10px 15px; /* Aumenta el padding para que sean más fáciles de usar */
+    border-radius: 8px; /* Bordes más suaves */
+    border: 1px solid #ced4da;
+}
+
+
+.btn-primary {
+    font-size: 18px;
+    padding: 12px 25px; /* Botón más grande */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    border-color: #0056b3;
+    transform: translateY(-2px); /* Pequeño levantamiento */
+}
+
+
+
+.table {
+    width: 100%;
+    margin-bottom: 0; /* Quita el margen inferior de la tabla de Bootstrap */
+    border-collapse: collapse; /* Asegura que no haya doble borde */
+    overflow-x: auto; /* Asegura el scroll horizontal si es necesario */
+}
+
+.botton-link{
+    text-decoration: none;
+    color: gray;
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: grab;
+    
+}
+
+
+
+footer {
+    background-color: #333333; /* Fondo oscuro */
+    color: #f8f9fa; /* Texto claro */
+    padding: 30px 0; /* Relleno superior e inferior */
+    text-align: center;
+    font-size: 15px;
+    margin-top: 60px; /* Margen superior para separarlo del contenido */
 }
