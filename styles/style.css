@@ -1,17 +1,267 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @use "./partials/base/reset";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\main.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"./partials/base/reset\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 1:1  root stylesheet";
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background-color: #cac4c4;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar .logo {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar .img-navbar {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.navbar .navbar-nav .nav-link {
+  color: #444444; /* Color de texto de los enlaces */
+  font-size: 18px; /* Tamaño de la fuente */
+  font-weight: 500; /* Grosor de la fuente */
+  padding-top: 8px; /* Espacio interno de los enlaces */
+  padding-bottom: 8px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  position: relative; /* Necesario para el efecto de subrayado */
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #2b70bb; /* Color al pasar el mouse (azul de Bootstrap) */
+}
+
+.container-fluid {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.container-fluid .row h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.container-fluid .row h2 {
+  font-size: 38px;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+.container-fluid .row .p {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+.container-fluid .row .a {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+.container-fluid .row .li {
+  margin-bottom: 8px;
+}
+.container-fluid .row .col-12 {
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .container-fluid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container-fluid .row h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .container-fluid .row h2 {
+    font-size: 28px;
+  }
+  .container-fluid .row p {
+    font-size: 15px;
+  }
+  .container-fluid .row .a {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  .container-fluid .row .img-jugadores {
+    margin-top: 15px;
+    width: 400px;
+    height: auto;
+    text-align: center;
+  }
+  .container-fluid .row .img-cuerpotecnico {
+    margin-top: 15px;
+    width: 400px;
+    height: auto;
+    text-align: center;
+  }
+  .container-fluid .row .img-search {
+    margin-top: 15px;
+    width: 500px;
+    height: auto;
+    text-align: center;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024) {
+  .container-fluid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container-fluid .row h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .container-fluid .row h2 {
+    font-size: 32px;
+  }
+  .container-fluid .row p {
+    font-size: 20px;
+  }
+  .container-fluid .row .a {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  .container-fluid .row .img-jugadores {
+    margin-top: 15px;
+    width: 500px;
+    height: auto;
+    text-align: center;
+  }
+  .container-fluid .row .img-cuerpotecnico {
+    margin-top: 15px;
+    width: 500px;
+    height: auto;
+    text-align: center;
+  }
+}
+.img-jugadores {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-contact {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-flush {
+  margin: 10px;
+}
+
+.btn-primary {
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.table {
+  margin: 20px;
+  width: 100%;
+  margin-bottom: 0;
+  overflow-x: auto;
+}
+.table .table-info {
+  width: 100%;
+  border-collapse: collapse;
+  /* Corrige los bordes dobles de las celdas */
+}
+.table .table-info th {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: beige;
+}
+.table .table-info td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: rgb(179, 179, 177);
+}
+.table .botton-link {
+  text-decoration: none;
+  color: gray;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: grab;
+}
+
+/* Estilos para móviles (hasta 450px) */
+@media (max-width: 450px) {
+  .table-info {
+    font-size: 12px;
+    margin-left: 0;
+    text-align: left;
+    padding: 0;
+    /* Tamaño de fuente más legible para móviles */
+  }
+  th {
+    padding: 0px;
+    text-align: left;
+  }
+  td {
+    padding: 0px;
+    text-align: left;
+  }
+  /* Ocultamos las columnas menos importantes */
+  th:nth-child(5),
+  td:nth-child(5),
+  th:nth-child(6),
+  td:nth-child(6),
+  th:nth-child(7),
+  td:nth-child(7),
+  th:nth-child(8),
+  td:nth-child(8) {
+    display: none;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .table-info {
+    font-size: 14px;
+    /* Tamaño de fuente para tablets y móviles */
+  }
+  .table-info th,
+  .table-info td {
+    padding: 5px;
+    /* Padding de celdas ajustado */
+  }
+  /* Ocultamos las columnas menos importantes en pantallas pequeñas y tablets */
+  .table-info th:nth-child(5),
+  .table-info td:nth-child(5),
+  .table-info th:nth-child(6),
+  .table-info td:nth-child(6),
+  .table-info th:nth-child(7),
+  .table-info td:nth-child(7),
+  .table-info th:nth-child(8),
+  .table-info td:nth-child(8) {
+    display: none;
+  }
+}
+footer {
+  background-color: #333333;
+  color: #f8f9fa;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
