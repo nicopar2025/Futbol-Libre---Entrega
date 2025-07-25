@@ -1,0 +1,48 @@
+
+
+fieldset {
+    
+    .form-label {
+        font-size: 16px;
+        font-weight: 500;
+        color: #555555;
+        margin-bottom: 8px;
+    }
+
+    .form-select {
+        .form-control {
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid #ced4da;
+        }
+    }
+}
+
+// Media query para móviles (hasta 450px)
+@media (max-width: 450px) {
+    .form-label {
+        font-size: 14px; // Reduce el tamaño de fuente para etiquetas en móviles
+        margin-bottom: 5px;
+    }
+
+    .form-select,
+    .form-control {
+        font-size: 14px; // Reduce el tamaño de fuente de los inputs/selects en móviles
+        padding: 8px 10px; // Reduce el padding para inputs/selects en móviles
+    }
+}
+
+// Media query para tablets (de 451px a 1024px)
+@media (min-width: 451px) and (max-width: 1024px) {
+    .form-label {
+        font-size: 15px; // Ajusta el tamaño de fuente para etiquetas en tablets
+        margin-bottom: 6px;
+    }
+
+    .form-select,
+    .form-control {
+        font-size: 15px; // Ajusta el tamaño de fuente de los inputs/selects en tablets
+        padding: 9px 12px; // Ajusta el padding para inputs/selects en tablets
+    }
+}

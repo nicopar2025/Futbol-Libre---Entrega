@@ -1,0 +1,42 @@
+.header{
+    margin-bottom: 30px;
+}
+
+.navbar{
+    background-color: #cac4c4; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+
+    .logo{
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .img-navbar{
+    width:40px ;
+    height:40px ;
+    text-align: center;
+
+    }
+
+    .navbar-nav .nav-link {
+                            color: #444444; /* Color de texto de los enlaces */
+                            font-size: 18px; /* Tamaño de la fuente */
+                            font-weight: 500; /* Grosor de la fuente */
+                            padding-top: 8px; /* Espacio interno de los enlaces */
+                            padding-bottom: 8px;
+                            transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+                            position: relative; /* Necesario para el efecto de subrayado */
+
+                            &:hover {
+                                        color: #2b70bb; /* Color al pasar el mouse (azul de Bootstrap) */
+                            }
+                        }
+}
+
+
+
+
+    

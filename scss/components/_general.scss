@@ -1,0 +1,202 @@
+.container-fluid {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .row {
+
+
+        h1 {
+            font-size: 56px;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 38px;
+            line-height: 1.3;
+            margin-bottom: 18px;
+        }
+
+
+
+        .p {
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .a {
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+
+        .li {
+            margin-bottom: 8px;
+        }
+
+        .col-12 {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .container-fluid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .row {
+            h1 {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .a {
+                font-size: 15px;
+                margin-bottom: 18px;
+            }
+            .img-jugadores{
+                margin-top: 15px;
+                width: 400px;
+                height: auto;
+                text-align: center;
+            }
+            .img-cuerpotecnico{
+                margin-top: 15px;
+                width: 400px;
+                height: auto;
+                text-align: center;
+
+            }
+
+            .img-search{
+                margin-top: 15px;
+                width: 500px;
+                height: auto;
+                text-align: center;
+            }
+
+        }
+    }
+
+
+}
+
+@media (min-width: 451px) and (max-width: 1024) {
+    .container-fluid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .row {
+
+            h1 {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .a {
+                font-size: 15px;
+                margin-bottom: 18px;
+            }
+
+            .img-jugadores{
+                margin-top: 15px;
+                width: 500px;
+                height: auto;
+                text-align: center;
+
+            }
+            
+            .img-cuerpotecnico{
+                margin-top: 15px;
+                width: 500px;
+                height: auto;
+                text-align: center;
+
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-jugadores {
+    max-width: 100%; // Asegura que la imagen no sea más ancha que su contenedor
+    height: auto; // Mantiene la proporción de la imagen
+    display: block; // Evita el espacio debajo de las imágenes en línea
+}
+
+
+
+
+
+.img-contact {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.accordion-flush {
+    margin: 10px;
+}
+
+.btn-primary {
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #007bff;
+    border-color: #007bff;
+
+    &:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+
+    }
+}
+
+
+
+
+
+
+// este es el de contacto
+
+// ver donde colocarlo, esta en todos los selectores 

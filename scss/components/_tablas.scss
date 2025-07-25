@@ -1,0 +1,101 @@
+.table {
+    margin: 20px;
+    width: 100%;
+    margin-bottom: 0;
+    overflow-x: auto;
+
+    .table-info {
+        width: 100%;
+        border-collapse: collapse;
+        /* Corrige los bordes dobles de las celdas */
+    }
+
+    .table-info th {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid black;
+        background-color: beige;
+    }
+
+    .table-info td {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid black;
+        background-color: rgb(179, 179, 177);
+    }
+
+    .botton-link {
+        text-decoration: none;
+        color: gray;
+        text-decoration: underline;
+        font-weight: 500;
+        cursor: grab;
+    }
+}
+
+
+
+/* Estilos para móviles (hasta 450px) */
+@media (max-width: 450px) {
+
+    
+    .table-info {
+        font-size: 12px;
+        margin-left: 0;
+        text-align: left;
+        padding: 0;
+        /* Tamaño de fuente más legible para móviles */
+    }
+
+   th{
+        padding: 0px;
+        text-align: left;
+        
+    }
+    td {
+        padding: 0px;
+        text-align: left;
+        
+    }
+
+    /* Ocultamos las columnas menos importantes */
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6),
+    th:nth-child(7),
+    td:nth-child(7),
+    th:nth-child(8),
+    td:nth-child(8) {
+        display: none;
+    }
+}
+
+
+@media (min-width:451px) and (max-width: 1024px) {
+    .table-info {
+        font-size: 14px;
+        /* Tamaño de fuente para tablets y móviles */
+    }
+
+    .table-info th,
+    .table-info td {
+        padding: 5px;
+        /* Padding de celdas ajustado */
+    }
+
+    /* Ocultamos las columnas menos importantes en pantallas pequeñas y tablets */
+    .table-info th:nth-child(5),
+    /* Altura */
+    .table-info td:nth-child(5),
+    .table-info th:nth-child(6),
+    /* Pie Hábil */
+    .table-info td:nth-child(6),
+    .table-info th:nth-child(7),
+    .table-info td:nth-child(7),
+    .table-info th:nth-child(8),
+    /* Sueldo */
+    .table-info td:nth-child(8) {
+        display: none;
+    }
+}
