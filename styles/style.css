@@ -43,8 +43,8 @@ body {
 }
 
 .container-fluid {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .container-fluid .row h1 {
   font-size: 56px;
@@ -71,11 +71,20 @@ body {
 .container-fluid .row .col-12 {
   text-align: center;
 }
+.container-fluid .row .table-player {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 @media (max-width: 450px) {
   .container-fluid {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container-fluid .row .col-12 {
+    padding: 20px;
   }
   .container-fluid .row h1 {
     font-size: 36px;
@@ -103,9 +112,18 @@ body {
     height: auto;
     text-align: center;
   }
+  .container-fluid .row .text-search {
+    padding: 20px;
+  }
   .container-fluid .row .img-search {
     margin-top: 15px;
-    width: 500px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+  }
+  .container-fluid .row .img-contact {
+    margin-top: 15px;
+    width: 300px;
     height: auto;
     text-align: center;
   }
@@ -114,6 +132,9 @@ body {
   .container-fluid {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .container-fluid .row .col-12 {
+    padding: 20px;
   }
   .container-fluid .row h1 {
     font-size: 40px;
@@ -136,6 +157,21 @@ body {
     text-align: center;
   }
   .container-fluid .row .img-cuerpotecnico {
+    margin-top: 15px;
+    width: 500px;
+    height: auto;
+    text-align: center;
+  }
+  .container-fluid .row .text-search {
+    padding: 20px;
+  }
+  .container-fluid .row .img-search {
+    margin-top: 15px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+  }
+  .container-fluid .row .img-contact {
     margin-top: 15px;
     width: 500px;
     height: auto;
