@@ -1,0 +1,20 @@
+@mixin tablegeneral ($top, $bottom, $left, $right) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+    overflow-x: auto;
+}
+
+@mixin table-info ($aling, $padding, $border, $background) {
+
+    text-align: $aling;
+    padding: $padding;
+    border: $border;
+    background-color: $background;
+}
+
+// margin-top: 40px; 
+// Márgenes para desktop margin-bottom: 40px;
+// Márgenes para desktop padding-left: 15px;
+// Márgenes para desktop  padding-right: 15px;

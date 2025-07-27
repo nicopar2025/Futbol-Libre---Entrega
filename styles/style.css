@@ -235,15 +235,15 @@ body {
 }
 
 .table {
-  margin: 20px;
-  width: 100%;
-  margin-bottom: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
   overflow-x: auto;
 }
 .table .table-info {
   width: 100%;
   border-collapse: collapse;
-  /* Corrige los bordes dobles de las celdas */
 }
 .table .table-info th {
   text-align: center;
@@ -267,52 +267,78 @@ body {
 
 /* Estilos para móviles (hasta 450px) */
 @media (max-width: 450px) {
-  .table-info {
+  .table {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: auto;
+    /* Ocultamos las columnas menos importantes */
+  }
+  .table .table-info {
     font-size: 12px;
     margin-left: 0;
     text-align: left;
     padding: 0;
-    /* Tamaño de fuente más legible para móviles */
   }
-  th {
-    padding: 0px;
-    text-align: left;
+  .table .table-info th {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: beige;
   }
-  td {
-    padding: 0px;
-    text-align: left;
+  .table .table-info td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: rgb(179, 179, 177);
   }
-  /* Ocultamos las columnas menos importantes */
-  th:nth-child(5),
-  td:nth-child(5),
-  th:nth-child(6),
-  td:nth-child(6),
-  th:nth-child(7),
-  td:nth-child(7),
-  th:nth-child(8),
-  td:nth-child(8) {
+  .table th:nth-child(5),
+  .table td:nth-child(5),
+  .table th:nth-child(6),
+  .table td:nth-child(6),
+  .table th:nth-child(7),
+  .table td:nth-child(7),
+  .table th:nth-child(8),
+  .table td:nth-child(8) {
     display: none;
   }
 }
 @media (min-width: 451px) and (max-width: 1024px) {
-  .table-info {
-    font-size: 14px;
-    /* Tamaño de fuente para tablets y móviles */
+  .table {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: auto;
+    /* Ocultamos las columnas menos importantes en pantallas pequeñas y tablets */
   }
-  .table-info th,
-  .table-info td {
-    padding: 5px;
-    /* Padding de celdas ajustado */
+  .table .table-info {
+    font-size: 12px;
+    margin-left: 0;
+    text-align: left;
+    padding: 0;
   }
-  /* Ocultamos las columnas menos importantes en pantallas pequeñas y tablets */
-  .table-info th:nth-child(5),
-  .table-info td:nth-child(5),
-  .table-info th:nth-child(6),
-  .table-info td:nth-child(6),
-  .table-info th:nth-child(7),
-  .table-info td:nth-child(7),
-  .table-info th:nth-child(8),
-  .table-info td:nth-child(8) {
+  .table .table-info th {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+    background-color: beige;
+  }
+  .table .table-info td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+    background-color: rgb(179, 179, 177);
+  }
+  .table .table-info th:nth-child(5),
+  .table .table-info td:nth-child(5),
+  .table .table-info th:nth-child(6),
+  .table .table-info td:nth-child(6),
+  .table .table-info th:nth-child(7),
+  .table .table-info td:nth-child(7),
+  .table .table-info th:nth-child(8),
+  .table .table-info td:nth-child(8) {
     display: none;
   }
 }
