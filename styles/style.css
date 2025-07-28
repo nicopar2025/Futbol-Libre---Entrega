@@ -177,7 +177,7 @@ body {
   }
   .container-fluid .row .img-jugadores {
     margin-top: 15px;
-    width: 500px;
+    width: 400px;
     height: auto;
     text-align: center;
   }
@@ -203,20 +203,6 @@ body {
     text-align: center;
   }
 }
-.img-jugadores {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.img-contact {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .accordion-flush {
   margin: 10px;
 }
